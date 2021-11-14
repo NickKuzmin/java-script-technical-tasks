@@ -1,3 +1,4 @@
+## 1. Вывод: 1432
 ```
 (function () {
 	console.log(1);
