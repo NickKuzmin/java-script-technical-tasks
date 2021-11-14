@@ -63,3 +63,17 @@ function reduceAdd() {
 reduceAdd.apply(obj1, [1, 2, 3, 4, 5]) // 15
 reduceAdd.call(obj2, 1, 2, 3, 4, 5) // 15
 ```
+
+## 4.
+```
+const employee = {
+    firstName: 'Marko',
+    lastName: 'Polo',
+    position: 'Software Developer',
+    yearHired: 2017
+}
+
+let { firstName, lastName, position, yearHired } = employee
+let { firstName: fName, lastName: lName, position, yearHired } = employee
+let { firstName = 'Mark', lastName: lName, position, yearHired } = employee
+```
