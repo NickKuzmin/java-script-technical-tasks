@@ -17,3 +17,26 @@ for (var i = 0; i < 5; i++) {
 ```
 
 **Вывод:** 55555
+
+## 3.
+```
+const details = {
+    message: 'Hello World!'
+}
+
+function getMessage() {
+    return this.message
+}
+
+getMessage.apply(details) // Hello World!
+
+const person = {
+    name: 'Marko Polo'
+}
+
+function greeting(greetingMessage) {
+    return `${greetingMessage} ${this.name}`
+}
+
+greeting.apply(person, ['Hello']) // Hello Marko Polo
+```
