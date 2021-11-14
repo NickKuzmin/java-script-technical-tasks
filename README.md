@@ -77,3 +77,29 @@ let { firstName, lastName, position, yearHired } = employee
 let { firstName: fName, lastName: lName, position, yearHired } = employee
 let { firstName = 'Mark', lastName: lName, position, yearHired } = employee
 ```
+
+## 5.
+```
+fs.readFile('somefile.txt', function(e,data){
+    // код
+    fs.readFile('directory', function(e, files){
+        // код
+        fs.mkdir('directory', function(e){
+            // код
+        })
+    })
+})
+```
+
+```
+promReadFile('file/path')
+.then(data => {
+    return promReaddir('directory')
+})
+.then(data => {
+    return promMkdir('directory')
+})
+.catch(e => {
+    console.error(e)
+})
+```
