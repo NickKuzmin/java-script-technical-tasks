@@ -29,7 +29,9 @@ function getMessage() {
 }
 
 getMessage.apply(details) // Hello World!
+```
 
+```
 const person = {
     name: 'Marko Polo'
 }
