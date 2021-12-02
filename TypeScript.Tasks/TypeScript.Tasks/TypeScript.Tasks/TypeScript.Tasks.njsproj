@@ -33,6 +33,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="lodashGetExample.ts" />
     <TypeScriptCompile Include="reduceSummaryExample.ts" />
     <TypeScriptCompile Include="reduceExample.ts" />
     <TypeScriptCompile Include="app.ts" />
