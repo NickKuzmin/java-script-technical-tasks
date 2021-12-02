@@ -1,0 +1,12 @@
+{
+  "name": "type-script.tasks",
+  "version": "0.0.0",
+  "description": "TypeScript.Tasks",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14"
+  }
+}
