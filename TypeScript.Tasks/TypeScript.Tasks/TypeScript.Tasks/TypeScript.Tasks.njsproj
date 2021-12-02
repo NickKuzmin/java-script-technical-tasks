@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="lodashGetExample.ts" />
+    <TypeScriptCompile Include="closureAddFunctionExample.ts" />
     <TypeScriptCompile Include="reduceSummaryExample.ts" />
     <TypeScriptCompile Include="reduceExample.ts" />
     <TypeScriptCompile Include="app.ts" />

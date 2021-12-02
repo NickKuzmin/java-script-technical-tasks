@@ -1,14 +1,18 @@
 ﻿import { ReduceExample } from "./reduceExample";
 import { ReduceSummaryExample } from "./reduceSummaryExample";
 import { LodashGetExample } from "./lodashGetExample";
+import { ClosureAddFunctionExample } from "./closureAddFunctionExample";
 
-let reduceExample = new ReduceExample();
+const reduceExample = new ReduceExample();
 reduceExample.execute();
 
-let reduceSummaryExample = new ReduceSummaryExample();
+const reduceSummaryExample = new ReduceSummaryExample();
 reduceSummaryExample.execute();
 
-let lodashGetExample = new LodashGetExample();
+const lodashGetExample = new LodashGetExample();
 lodashGetExample.execute();
+
+const closureAddFunctionExample = new ClosureAddFunctionExample();
+closureAddFunctionExample.execute();
 
 setTimeout(x => { }, 10000);
