@@ -2,6 +2,7 @@
 import { ReduceSummaryExample } from "./reduceSummaryExample";
 import { LodashGetExample } from "./lodashGetExample";
 import { ClosureAddFunctionExample } from "./closureAddFunctionExample";
+import { SetTimeoutLoopExample } from "./setTimeoutLoop";
 
 const reduceExample = new ReduceExample();
 reduceExample.execute();
@@ -14,5 +15,8 @@ lodashGetExample.execute();
 
 const closureAddFunctionExample = new ClosureAddFunctionExample();
 closureAddFunctionExample.execute();
+
+const setTimeoutLoopExample = new SetTimeoutLoopExample();
+setTimeoutLoopExample.execute();
 
 setTimeout(x => { }, 10000);

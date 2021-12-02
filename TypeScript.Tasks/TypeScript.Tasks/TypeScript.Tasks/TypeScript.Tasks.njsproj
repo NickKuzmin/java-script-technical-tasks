@@ -33,6 +33,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="setTimeoutLoop.ts" />
     <TypeScriptCompile Include="lodashGetExample.ts" />
     <TypeScriptCompile Include="closureAddFunctionExample.ts" />
     <TypeScriptCompile Include="reduceSummaryExample.ts" />
