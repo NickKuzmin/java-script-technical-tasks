@@ -17,3 +17,89 @@ for (var i = 0; i < 5; i++) {
 ```
 
 **Вывод:** 55555
+
+## 3.
+```
+const details = {
+    message: 'Hello World!'
+}
+
+function getMessage() {
+    return this.message
+}
+
+getMessage.apply(details) // Hello World!
+```
+
+```
+const person = {
+    name: 'Marko Polo'
+}
+
+function greeting(greetingMessage) {
+    return `${greetingMessage} ${this.name}`
+}
+
+greeting.apply(person, ['Hello']) // Hello Marko Polo
+```
+
+```
+const obj1 = {
+    result: 0
+}
+
+const obj2 = {
+    result: 0
+}
+
+function reduceAdd() {
+    let result = 0
+    for (let i = 0, len = arguments.length; i < len; i++) {
+        result += arguments[i]
+    }
+    this.result = result
+}
+
+reduceAdd.apply(obj1, [1, 2, 3, 4, 5]) // 15
+reduceAdd.call(obj2, 1, 2, 3, 4, 5) // 15
+```
+
+## 4.
+```
+const employee = {
+    firstName: 'Marko',
+    lastName: 'Polo',
+    position: 'Software Developer',
+    yearHired: 2017
+}
+
+let { firstName, lastName, position, yearHired } = employee
+let { firstName: fName, lastName: lName, position, yearHired } = employee
+let { firstName = 'Mark', lastName: lName, position, yearHired } = employee
+```
+
+## 5.
+```
+fs.readFile('somefile.txt', function(e,data){
+    // код
+    fs.readFile('directory', function(e, files){
+        // код
+        fs.mkdir('directory', function(e){
+            // код
+        })
+    })
+})
+```
+
+```
+promReadFile('file/path')
+.then(data => {
+    return promReaddir('directory')
+})
+.then(data => {
+    return promMkdir('directory')
+})
+.catch(e => {
+    console.error(e)
+})
+```
